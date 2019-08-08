@@ -11,6 +11,8 @@ package LongestPalindrome;
  *               输入: "babad"
  *               输出: "bab"
  *               注意: "aba" 也是一个有效答案。
+ *
+ * @Method: Dynamic Programming
  */
 public class LongestPalindrome {
     public static void main(String[] args){
