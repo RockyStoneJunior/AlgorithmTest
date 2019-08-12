@@ -66,13 +66,15 @@ class MST {
             // not yet included in MST
             int u = minKey(key, mstSet);
 
+            //System.out.print(u + " ");
+
             // Add the picked vertex to the MST Set
             mstSet[u] = true;
 
             // Update key value and parent index of the adjacent
             // vertices of the picked vertex. Consider only those
             // vertices which are not yet included in MST
-            for (int v = 0; v < V; v++)
+            for (int v = 0; v < V; v++) {
 
                 // graph[u][v] is non zero only for adjacent vertices of m
                 // mstSet[v] is false for vertices not yet included in MST
@@ -81,7 +83,20 @@ class MST {
                     parent[v] = u;
                     key[v] = graph[u][v];
                 }
+            }
+
+            for (int i = 0; i < this.V; i++) {
+                System.out.print(key[i] + " ");
+            }
+
+            System.out.println();
         }
+
+//        for(int i = 0; i < this.V; i++){
+//            System.out.print(key[i] + " ");
+//        }
+//
+        System.out.println();
 
         // print the constructed MST
         printMST(parent, graph);
@@ -98,11 +113,11 @@ class MST {
 		(3)-------(4)
 			9		 */
         MST t = new MST();
-        int graph[][] = new int[][] { { 0, 2, 0, 6, 0 },
+        int graph[][] = new int[][] { { 0, 2, 0, 9, 0 },
                 { 2, 0, 3, 8, 5 },
                 { 0, 3, 0, 0, 7 },
-                { 6, 8, 0, 0, 9 },
-                { 0, 5, 7, 9, 0 } };
+                { 9, 8, 0, 0, 6 },
+                { 0, 5, 7, 6, 0 } };
 
         // Print the solution
         t.primMST(graph);
