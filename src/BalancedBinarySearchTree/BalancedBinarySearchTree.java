@@ -45,6 +45,34 @@ public class BalancedBinarySearchTree {
         tree.root = tree.insert(tree.root, 25);
         TreeOperation.show(tree.root);
         System.out.print("\n\n\n");
+
+        tree.root = tree.insert(tree.root, 35);
+        TreeOperation.show(tree.root);
+        System.out.print("\n\n\n");
+
+        tree.root = tree.insert(tree.root, 5);
+        TreeOperation.show(tree.root);
+        System.out.print("\n\n\n");
+
+        tree.root = tree.insert(tree.root, 60);
+        TreeOperation.show(tree.root);
+        System.out.print("\n\n\n");
+
+        tree.root = tree.insert(tree.root, 26);
+        TreeOperation.show(tree.root);
+        System.out.print("\n\n\n");
+
+        tree.root = tree.insert(tree.root, 32);
+        TreeOperation.show(tree.root);
+        System.out.print("\n\n\n");
+
+        tree.root = tree.insert(tree.root, 4);
+        TreeOperation.show(tree.root);
+        System.out.print("\n\n\n");
+
+        tree.root = tree.insert(tree.root, 70);
+        TreeOperation.show(tree.root);
+        System.out.print("\n\n\n");
     }
 
     AVLNode rightRotate(AVLNode y) {
